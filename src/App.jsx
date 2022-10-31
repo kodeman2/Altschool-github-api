@@ -1,28 +1,39 @@
 import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
+import { GitHubProvider } from "./components/GITHUBCONTEXT";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+
+import Navbar from "./components/Navbar";
+import RepoDetails from "./components/RepoDetails";
+import Repositories from "./components/Repositories";
+import Error404 from "./components/Error404";
+
 import "./App.css";
-import ProfileCard from "./components/ProfileCard";
-import Repo from "./components/Repo";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Router>
-        <nav className="navbar">
-          
-          <Link className="navchild" to="/">Profile</Link>
-          <Link className="navchild" to="/repo">Repositories</Link>
-        </nav>
-        <Routes>
-          
-          <Route path="/repo" element={<Repo />} />
+    <GitHubProvider>
+      <div className="App">
+        <Router>
+      <Navbar />
 
-          <Route path="/" element={<ProfileCard />} />
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="repositories" element={<Repositories />} />
+        <Route path="repositories/:repoName" element={<RepoDetails />} />
+        <Route path="*" element={<Error404 />} />
+      </Routes>
+    </Router>
 
-     
-    </div>
+
+
+      </div>
+
+      </GitHubProvider>
   );
 }
 
-export default App;
+
