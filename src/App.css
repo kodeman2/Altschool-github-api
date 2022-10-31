@@ -1,0 +1,43 @@
+.navbar{
+    background-color: #b9aaaa;
+    color: #ffffff;
+    display:flex ;
+    justify-content: space-between;
+}
+.repo-card{
+    background-color: #b9aaaa;
+    color: #ffffff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single{
+    border-radius: 12px;
+    background-color: green;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.repo-card a{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+
+
+}
+
+
+
+
+
+
+
