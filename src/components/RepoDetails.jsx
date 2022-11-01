@@ -21,7 +21,10 @@ useEffect(() => {
    }
   });
   return res;
+  
  }, [params?.repoName, gitHubRepos]);
+
+ 
 
  return (
   <div className="repo-details">

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import Loadingspinner from "./Loadingspinner"
+import { BiBadgeCheck, GoLocation, AiOutlineArrowRight } from "react-icons/all";
 
 
 export default function Home() {
@@ -41,13 +42,24 @@ export default function Home() {
         <Loadingspinner />) : (
       <div className="profile-card">
         <img src={items.avatar_url} alt="avatar" />
-        <h2>{items.name}</h2>
+        <div className="pro_card_head">
+         <h3>{items.name}</h3><span><BiBadgeCheck/></span>
+         </div>
         <p>{items.bio}</p>
-        <p>{}</p>
-        <p>{items.location}</p>
-        <p>{items.blog}</p>
-        <p>{items.company}</p>
-        <p>Total Repositories {items.public_repos}</p>
+        <div className="cardlocation">
+         <GoLocation/> <p>{items.location}</p>
+
+        </div>
+       
+      <div className="card-repo">
+       
+
+        <p>Total Repositories </p><div className="arrow">
+
+         <AiOutlineArrowRight/>
+         </div>
+         {items.public_repos}
+      </div>
 
         <div className="profile-card__stats">
           <div className="profile-card__stat">
