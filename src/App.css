@@ -4,14 +4,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  
 }
 .App {
   background-color: #000000;
   background-image: url(./assets/banner-bg.png);
   background-repeat: no-repeat;
   background-size: fill;
-  
 
   width: 100%;
   height: 100%;
@@ -31,6 +29,25 @@
   justify-content: space-between;
 }
 
+.left_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.left_cont img {
+  width: 350px;
+  height: 250px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.left_cont img:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
 .right_cont {
   display: flex;
   justify-content: space-between;
@@ -48,14 +65,15 @@
 }
 .left_cont {
   display: flex;
+  justify-content: space-between;
   width: 50%;
-  margin-left: 20px;
+  margin-right: 20px;
   cursor: pointer;
 }
 
 .Homepage {
   /* background-color: #000000; */
-  height: (100vh -50px);
+  height:100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -75,7 +93,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px 40px 90px 40px;
 }
 
 .left_home img {
@@ -195,58 +213,49 @@
   margin-bottom: 10px;
 }
 
-.cardlocation{
+.cardlocation {
   display: flex;
   align-items: center;
   gap: 10px;
- 
- 
 
   padding: 10px;
- 
-
 }
 
-.card-repo{
+.card-repo {
   display: flex;
   align-items: center;
   gap: 10px;
-
-
 }
 
-
-.arrow{
- align-items: center;
+.arrow {
+  align-items: center;
 }
 
-.profile-card__stat{
+.profile-card__stat {
   display: flex;
   align-items: center;
   gap: 10px;
- 
 }
 
-.about{
+.about {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 40px;
+  padding: 40px 20px 170px 20px;; 
 }
 
-.about_left{
+.about_left {
   padding-top: 80px;
- 
 }
 
-.about_left img{
+.about_left img {
   width: 80%;
   height: 80%;
   object-fit: contain;
 }
 
-.about_right{
- line-height: 42px;
+.about_right {
+  line-height: 42px;
   width: 50%;
   height: 100%;
   display: flex;
@@ -259,20 +268,19 @@
   word-wrap: break-word;
 }
 
-.about_right h1{
+.about_right h1 {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 20px;
   padding: 10px;
 }
 
-.about_right:hover{
+.about_right:hover {
   box-shadow: 0 0 10px 0 rgba(211, 191, 191, 0.7);
   cursor: pointer;
 }
 
-
-.repositories{
+.repositories {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -280,16 +288,15 @@
   padding-top: 60px;
 }
 
-.repoleft{
+.repoleft {
   color: #fff;
   font-weight: 400;
   font-size: 16px;
   width: 90%;
   padding: 20px;
-  
 }
 
-.repoleft a{
+.repoleft a {
   display: flex;
   color: #fff;
 
@@ -299,54 +306,56 @@
   padding: 20px;
   box-shadow: 0 0 10px 0 rgba(211, 191, 191, 0.2);
   margin-bottom: 20px;
-
 }
 
-.repoleft a:hover{
+.repoleft a:hover {
   box-shadow: 0 0 10px 0 rgba(211, 191, 191, 0.9);
   cursor: pointer;
-  
 }
 
-.repoleft h1{
+.Forks {
+  background-color: #000;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  width: 160px;
+}
+.repoleft h1 {
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 5px;
   padding: 5px;
 }
 
-.repoleft h2{
+.repoleft h2 {
   font-size: 20px;
   font-weight: 400;
- 
+
   padding: 5px;
 }
 
-.repoleft p{
+.repoleft p {
   font-size: 16px;
   font-weight: 400;
-  
+
   padding: 5px;
 }
 
-.reporight{
-  
-  
+.reporight {
   padding: 20px;
-  margin-top: 50px;
-  margin-left: 150px;
-
-
+  margin-top: 150px;
+  margin-left: 170px;
 }
-.repositories__container{
+.repositories__container {
   text-decoration: none;
   padding-top: 10px;
   display: flex;
   flex-direction: column;
- 
-} 
+}
 
-.pagination{
+.pagination {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -354,10 +363,7 @@
   padding: 20px;
 }
 
-
-
-
-.pagination button{
+.pagination button {
   background-color: #000000;
   color: #fff;
   border: none;
@@ -367,32 +373,510 @@
   opacity: 0.6;
 }
 
-.pagination button:hover{
+.pagination button:hover {
   opacity: 1;
   background-color: yellow;
   color: #000;
 }
 
-.pagination button:active{
+.pagination button:active {
   opacity: 2.6;
-  font-size: 21px;
+
   background-color: yellow;
 }
 
- .Forks{
- background-color: #000; 
- border-radius: 10px;
-  padding: 10px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  width: 160px;
-
-}
-
 button:disabled,
-button[disabled]{
+button[disabled] {
   border: 1px solid #999999;
   background-color: #cccccc;
   color: #666666;
+}
+
+button:disabled:hover,
+button[disabled]:hover {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+.stack {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.about_stack {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+/* 
+contact page styling */
+
+.contact {
+  display: flex;
+  flex-direction: rows;
+  justify-content: space-between;
+  margin-top: 45px;
+  height: 100vh;
+
+  padding: 60px 20px 20px 20px;
+}
+
+.leftcontact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 50px;
+  padding: 20px;
+  width: 40%;
+  height: 45%;
+  color: #fff;
+  box-shadow: 0 0 10px 0 rgba(211, 191, 191, 0.2);
+  word-wrap: break-word;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+.leftcontact h1 {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+.leftcontact p {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+.leftcontact a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 5px;
+}
+
+.leftcontact a:hover {
+  color: yellow;
+}
+
+.leftcontact:hover {
+  box-shadow: 0 0 10px 0 rgba(211, 191, 191, 0.7);
+  cursor: pointer;
+}
+
+.rightcontact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 50px;
+  padding: 20px;
+  width: 40%;
+  height: 75%;
+  color: #fff;
+}
+
+.about_social {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 160px 20px 20px 20px;
+}
+
+.rightcontact h2 {
+  font-size: 20px;
+  font-weight: 400;
+
+  padding: 5px;
+}
+
+.rightcontact a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 50px;
+  padding: 5px;
+}
+
+.rightcontact a:hover {
+  color: yellow;
+}
+/* each repository styling */
+
+.repo-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.repo-details button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  margin-right: 20px;
+}
+
+.repo-details button:hover {
+  background-color: yellow;
+  color: #000;
+}
+
+.repo-details__container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  margin-top: 50px;
+  padding: 20px;
+  width: 30%;
+  height: 55%;
+  color: #fff;
+  background-color: #000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(211, 191, 191, 0.5);
+}
+
+.repohead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  padding: 5px;
+}
+
+.repohead h3 {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px;
+  word-wrap: break-word;
+}
+
+.repodetails_img {
+  width: 100px;
+  height: 90px;
+  padding: 22px;
+  border-radius: 40%;
+}
+
+.repobody {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  line-height: 30px;
+  padding: 10px;
+  width: 100%;
+  height: 55%;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.repobody h4 {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px;
+  word-wrap: break-word;
+  color: red;
+}
+
+.repobody p {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px;
+  word-wrap: break-word;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+.repobody h5 {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px;
+  word-wrap: break-word;
+  color: #fff;
+}
+
+.repofooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  padding: 5px;
+}
+
+.repofooter a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.repofooter button {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.repofooter button:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.repofooter p {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  word-wrap: break-word;
+  color: #fff;
+  background-color: green;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .left_cont {
+    display: none;
+    width: 20%;
+  }
+
+  .right_cont {
+    width: 100%;
+    padding-left: 5px;
+  }
+
+  .Homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left_home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: #fff;
+  }
+
+  .left_home h2 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 5px;
+  }
+
+  .right_home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: #fff;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: #fff;
+  }
+
+  .about_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    margin-top: 30px;
+    padding: 20px;
+    color: #fff;
+  }
+
+  .about_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    padding: 10px;
+    color: #fff;
+  }
+
+  .about_right h1 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px;
+    margin-bottom: 0;
+  }
+
+  .about_right p {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+    margin-top: 0;
+    line-height: 25px;
+  }
+
+  .about_stack {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: #fff;
+    word-wrap: break-word;
+  }
+
+  .repositories {
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    padding: 10px;
+  }
+
+  .repoleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    color: #fff;
+    word-wrap: break-word;
+  }
+
+  .repoleft h1 {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px;
+    margin-bottom: 0;
+  }
+
+  .repoleft p {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+    margin-top: 0;
+    line-height: 25px;
+  }
+  .repositories__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    color: #fff;
+    word-wrap: break-word;
+  }
+
+  .rep_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    padding: 0px;
+    line-height: 20px;
+    color: #fff;
+    word-wrap: break-word;
+  }
+
+  .pagination {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    padding: 5px;
+    color: #fff;
+    word-wrap: break-word;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px  20px 120px 20px;
+    color: #fff;
+  }
+
+  .leftcontact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: #fff;
+  }
+
+  .rightcontact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-left: -35px;
+    color: #fff;
+  }
+
+  
 }

@@ -1,7 +1,11 @@
-import React from 'react'
+import { ImSpinner10 } from "react-icons/im";
 
-export default function Loading() {
+const LoadingSpinner = () => {
   return (
-    <div>Loading....</div>
-  )
-}
+    <div className="spinner__box">
+      <ImSpinner10 className="spinner" />
+      <h2>Loading...</h2>
+    </div>
+  );
+};
+export default LoadingSpinner;

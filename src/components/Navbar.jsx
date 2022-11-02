@@ -4,7 +4,8 @@ export default function Navbar() {
   return (
     <nav className="navbar">
      <div className="left_cont">
-      
+      <img src="./src/assets/download.svg" alt="logo" />
+
      </div>
      <div className="right_cont">
 

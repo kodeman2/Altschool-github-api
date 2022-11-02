@@ -1,1 +1,1 @@
-export const REPOS_PER_PAGE = 5;
+export const REPOS_PER_PAGE = 4;

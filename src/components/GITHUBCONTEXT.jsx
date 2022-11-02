@@ -13,7 +13,7 @@ export const GitHubProvider = ({children}) => {
  const [Loading, setLoading] = useState(false);
 
  
- let baseUrl = `https://api.github.com/users/${userName}/repos`; // base url for github api
+ let baseUrl = `https://api.github.com/users/${userName}/repos?per_page=100`; // base url for github api
  
  useEffect(() => {
   setLoading(true);
@@ -24,7 +24,7 @@ export const GitHubProvider = ({children}) => {
     setLoading(false);
    const filteredRepos = myRepos?.filter((repo) => repo);
    setGitHubRepos(filteredRepos);
-   }, 1000);
+   }, 2000);
   
   })
  }, [  userName]);
