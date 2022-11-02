@@ -34,7 +34,7 @@ export default function Home() {
       <h2> hello i'm {items?.name}</h2>
       <h2> hello i'm {items?.name}</h2>
       </div>
-      <img src="./src/assets/contact-img.svg" alt="contact-img" />
+      <img src="../assets/contact-img.svg" alt="contact-img" />
      </div>
      <div className="right_home">
      <h1>{userName}'s Github Profile</h1>

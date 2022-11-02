@@ -5,7 +5,7 @@ export default function About() {
     <div className="about">
      <div className="about_left">
 
-<img src="./src/assets/header-img.svg"/>
+<img src="../assets/header-img.svg"/>
      </div>
 <div className="about_right">
 <h1>About</h1>

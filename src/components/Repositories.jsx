@@ -118,7 +118,7 @@ export default function Repositories() {
       </div>
      </div>
      <div className="reporight">
-      <img  src="./src/assets/robo-wave.png" alt="robo-wave" />
+      <img  src="../assets/robo-wave.png" alt="robo-wave" />
 
       </div>
       

@@ -7,7 +7,7 @@
 }
 .App {
   background-color: #000000;
-  background-image: url(./assets/banner-bg.png);
+  background-image: url(../assets/banner-bg.png);
   background-repeat: no-repeat;
   background-size: fill;
 
