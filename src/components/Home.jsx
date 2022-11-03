@@ -20,7 +20,7 @@ export default function Home() {
       });
   }, [userName]);
 
-  console.log(items);
+
 
   return (
     <div className="Homepage">

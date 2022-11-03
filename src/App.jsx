@@ -14,13 +14,16 @@ import ErrorPage from "./components/ErrorPage";
 import "./App.css";
 import ErrorTest from "./components/ErrorTest";
 
+
 export default function App() {
   return (
     <GitHubProvider>
       <div className="App">
-        <ErrorBoundary>
         <Router>
+          <ErrorBoundary >
       <Navbar />
+      </ErrorBoundary>
+        <ErrorBoundary>
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -34,9 +37,9 @@ export default function App() {
 
 
       </Routes>
+    </ErrorBoundary>
     </Router>
 
-    </ErrorBoundary>
 
       </div>
 

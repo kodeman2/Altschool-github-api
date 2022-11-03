@@ -25,7 +25,7 @@ const usernameRef = React.useRef(null)
 return (
  <div className='errorinput'>
    <label>
-     {`Username (don't type "bomb"): `}
+     {`Username (don't type "bomb"):  `}
      <input
        placeholder={`type "bomb"`}
        value={username}
