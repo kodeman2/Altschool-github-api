@@ -502,9 +502,12 @@ contact page styling */
 .rightcontact h2 {
   font-size: 20px;
   font-weight: 400;
+  color: #ffffff;
 
   padding: 5px;
 }
+
+
 
 .rightcontact a {
   color: #fff;
@@ -808,6 +811,10 @@ contact page styling */
     padding: 5px;
     margin-top: 0;
     line-height: 25px;
+  }
+
+  .reporight{
+    display:none
   }
   .repositories__container {
     display: grid;

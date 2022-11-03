@@ -72,13 +72,18 @@ export default function Repositories() {
   const { gitHubRepos } = useGithubRepos();
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
+ 
 
 
   const [userName] = useState('kodeman2');
 
   useEffect(() => {
+
+   
   const totalRepos = gitHubRepos?.length;
   setTotalPages(Math.ceil(totalRepos / REPOS_PER_PAGE)); 
+  
+  
   }, [gitHubRepos]);
 
   const indexOfLastRepo = page * REPOS_PER_PAGE;
@@ -115,7 +120,7 @@ export default function Repositories() {
             </div>
           </Link>
         ))}
-      </div>
+      </div>  
      </div>
      <div className="reporight">
       <img  src="../assets/robo-wave.png" alt="robo-wave" />
