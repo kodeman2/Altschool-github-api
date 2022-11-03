@@ -1,5 +1,6 @@
 import { FaLinkedin, FaGithubSquare, FaTwitterSquare, FcContacts, AiOutlineArrowRight } from "react-icons/all";
 
+
 export default function Contact() {
   return (
     <div className="contact">
@@ -38,6 +39,7 @@ export default function Contact() {
       </div>
 
       </div>
+      
 
 
 

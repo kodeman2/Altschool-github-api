@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Loadingspinner from "./Loadingspinner";
 import { BiBadgeCheck, GoLocation, AiOutlineArrowRight } from "react-icons/all";
-import { Backdrop } from "@mui/material";
+import {Link} from 'react-router-dom';
 
 export default function Home() {
   const [items, setItems] = useState([]);
@@ -10,7 +10,7 @@ export default function Home() {
   const userName = "kodeman2";
 
   useEffect(() => {
-    
+
     setLoading(true);
     fetch(`https://api.github.com/users/${userName}`)
       .then((res) => res.json())
@@ -31,7 +31,11 @@ export default function Home() {
         </div>
         <img src="../assets/contact-img.svg" alt="contact-img" />
       </div>
+      <div className="errorlinks">
+       <Link to="/errorpage">TestErrors</Link>
+      </div>
       <div className="right_home">
+       
         <h1>{userName}'s Github Profile</h1>
         {loading ? (
           <Loadingspinner />

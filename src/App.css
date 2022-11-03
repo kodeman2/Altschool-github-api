@@ -73,7 +73,7 @@
 
 .Homepage {
   /* background-color: #000000; */
-  height:100%;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -241,7 +241,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 40px 20px 170px 20px;; 
+  padding: 40px 20px 170px 20px;
 }
 
 .about_left {
@@ -507,8 +507,6 @@ contact page styling */
   padding: 5px;
 }
 
-
-
 .rightcontact a {
   color: #fff;
   text-decoration: none;
@@ -669,6 +667,136 @@ contact page styling */
   background-color: green;
   border-radius: 5px;
 }
+.errorlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.errorlinks a {
+  margin: 5px;
+  padding: 10px;
+  opacity: 0;
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: yellow;
+  border-radius: 10px;
+  animation: flash 2s infinite linear;
+}
+
+.errorlinks a:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.errorpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.errorcont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 400px;
+  width: 400px;
+}
+
+.errorpage h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #fff;
+  padding: 25px;
+}
+
+.errorcont a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px;
+  font-size: 20px;
+  background-color: yellow;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.errorcont a:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.errorinput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.errorinput input {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  padding: 5px;
+}
+
+.fallback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.fallback button {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  padding: 5px;
+  background-color: yellow;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.fallback button:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
   .left_cont {
@@ -714,6 +842,9 @@ contact page styling */
     height: 100%;
     padding: 20px;
     color: #fff;
+  }
+  .profile-card {
+    margin-top: 30px;
   }
 
   .about {
@@ -783,7 +914,7 @@ contact page styling */
     width: 100%;
     height: 100%;
     background-size: 100%;
-    padding: 10px;
+    padding: 10px 10px 350px 10px;
   }
 
   .repoleft {
@@ -813,8 +944,8 @@ contact page styling */
     line-height: 25px;
   }
 
-  .reporight{
-    display:none
+  .reporight {
+    display: none;
   }
   .repositories__container {
     display: grid;
@@ -822,7 +953,7 @@ contact page styling */
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80%;
+    height: 100%;
     padding: 10px;
     color: #fff;
     word-wrap: break-word;
@@ -858,11 +989,11 @@ contact page styling */
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 20px  20px 120px 20px;
+    padding: 20px 20px 120px 20px;
     color: #fff;
   }
 
-  .leftcontact{
+  .leftcontact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -873,7 +1004,7 @@ contact page styling */
     color: #fff;
   }
 
-  .rightcontact{
+  .rightcontact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -884,6 +1015,4 @@ contact page styling */
     margin-left: -35px;
     color: #fff;
   }
-
-  
 }
