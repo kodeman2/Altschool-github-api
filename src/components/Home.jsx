@@ -1,27 +1,28 @@
 import { useState, useEffect } from "react";
 import Loadingspinner from "./Loadingspinner";
 import { BiBadgeCheck, GoLocation, AiOutlineArrowRight } from "react-icons/all";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
+// create Home function
 export default function Home() {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // store name of the user in a variable
   const userName = "kodeman2";
 
+  // github api fetch
   useEffect(() => {
-
     setLoading(true);
     fetch(`https://api.github.com/users/${userName}`)
       .then((res) => res.json())
       .then((data) => {
-                setItems(data);
+        setItems(data);
         setLoading(false);
       });
   }, [userName]);
 
-
-
+  //  return the data
   return (
     <div className="Homepage">
       <div className="left_home">
@@ -32,10 +33,9 @@ export default function Home() {
         <img src="../assets/contact-img.svg" alt="contact-img" />
       </div>
       <div className="errorlinks">
-       <Link to="/errorpage">TestErrors</Link>
+        <Link to="/errorpage">TestErrors</Link>
       </div>
       <div className="right_home">
-       
         <h1>{userName}'s Github Profile</h1>
         {loading ? (
           <Loadingspinner />

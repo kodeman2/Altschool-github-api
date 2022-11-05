@@ -1,7 +1,11 @@
 import { BsFillArrowDownCircleFill } from "react-icons/all";
 
+// about page
 export default function About() {
+  
+  
   return (
+    
     <div className="about">
      <div className="about_left">
 

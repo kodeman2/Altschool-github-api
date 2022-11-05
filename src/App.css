@@ -765,12 +765,11 @@ contact page styling */
 }
 
 .errorinput input {
-
-
   font-size: 20px;
   font-weight: 400;
   color: #fff;
   padding: 5px;
+  background-color: #000;
 }
 
 .fallback {
@@ -1018,7 +1017,7 @@ contact page styling */
     color: #fff;
   }
 
-  .repo-details{
+  .repo-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1029,7 +1028,7 @@ contact page styling */
     color: #fff;
   }
 
-  .repo-details__container{
+  .repo-details__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1040,17 +1039,15 @@ contact page styling */
     color: #fff;
   }
 
-  .errorinput{
+  .errorinput {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
-    
-    
   }
 
-  input{
+  input {
     width: 80%;
     height: 40px;
     border: 1px solid #fff;
@@ -1060,9 +1057,4 @@ contact page styling */
     color: #fff;
     background-color: #000;
   }
-
-   
-  }
-
-
-
+}

@@ -1,7 +1,9 @@
 import {ErrorBoundary} from 'react-error-boundary'
 import React from 'react';
 
+// This is our ErrorFallback component
 function ErrorFallback({error, resetErrorBoundary}) {
+  // We can render any custom fallback UI
  return (
    <div className='fallback' role="alert">
      <p>Something went wrong:</p>
@@ -11,16 +13,21 @@ function ErrorFallback({error, resetErrorBoundary}) {
  )
 }
 
+// This is our ErrorTest component
 function Bomb({username}) {
 if (username === 'bomb') {
  throw new Error('💥 CABOOM 💥')
 }
+// if there's no error, render this
 return `Hi ${username}`
 }
 
+
 export default function ErrorTest() {
+  
 const [username, setUsername] = React.useState('')
 const usernameRef = React.useRef(null)
+
 
 return (
  <div className='errorinput'>
@@ -34,6 +41,7 @@ return (
      />
    </label>
    <div>
+    {/* error boundaries declaration */}
      <ErrorBoundary
        FallbackComponent={ErrorFallback}
        onReset={() => {
@@ -45,7 +53,7 @@ return (
        <Bomb username={username} />
      </ErrorBoundary>
 
-  <link to=""></link>
+  
    </div>
  </div>
 )
