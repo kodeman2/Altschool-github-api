@@ -481,11 +481,43 @@ contact page styling */
   justify-content: space-between;
   align-items: flex-start;
   gap: 10px;
-  margin-top: 50px;
+  margin-top: 5px;
   padding: 20px;
   width: 40%;
-  height: 75%;
+  height: 100%;
   color: #fff;
+}
+
+.rightcontact h1 {
+  font-size: 25px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+.contact_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+ 
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+ 
+  padding: 10px;
+  width: 70%;
+  color: #fff;
+
 }
 
 .about_social {
@@ -496,7 +528,7 @@ contact page styling */
   gap: 10px;
   width: 100%;
   height: 100%;
-  padding: 160px 20px 20px 20px;
+  padding: 1px 20px 20px 20px;
 }
 
 .rightcontact h2 {
@@ -1016,6 +1048,7 @@ contact page styling */
     margin-left: -35px;
     color: #fff;
   }
+
 
   .repo-details {
     display: flex;
