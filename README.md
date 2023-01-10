@@ -7,7 +7,7 @@ Implement an API fetch of your GitHub portfolio, show a page with a list of all 
 
 ## by Oluwakolade Olagunju
 
-for Altschool Frontend Second Semester Examination
+for Altschool Frontend Second Semester Examination question 1
 
 ## Repo Hosted on Netlify
 
